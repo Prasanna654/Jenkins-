@@ -1,0 +1,42 @@
+1  sudo apt update
+    2  sudo apt install software-properties-common
+    3  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    4  sudo apt install ansible -y
+    5  ssh-keygen
+    6  cd .ssh/
+    7  ls
+    8  cat id_ed25519.pub
+    9  cd /etc/ansible
+   10  ls
+   11  sudo nano hosts
+   12  ansible -m ping all
+   13  sudo nano playbook.yaml
+   14  ansible-playbook playbook.yaml --syntax-check
+   15  sudo nano playbook.yaml
+   16  ansible-playbook playbook.yaml --syntax-check
+   17  sudo nano playbook.yaml
+   18  y
+   19  sudo nano playbook.yaml
+   20  ansible-playbook playbook.yaml --syntax-check
+   21  ansible-playbook playbook.yaml --check
+   22  ansible-playbook playbook.yaml
+   23  history
+
+SLAVE 1
+ 1  sudo apt update
+    2  cd .ssh
+    3  ls
+    4  sudo nano authorized_keys
+    5  Create a script which can add text “This text has been added by custom script” to
+    6  /tmp.1.txt
+    7  ● Run this script using Ansible on all the hosts
+    8  java --version
+    9  history
+slave 2
+ubuntu@ip-172-31-21-224:~/.ssh$ history
+    1  sudo apt update
+    2  cd .ssh
+    3  ls
+    4  sudo nano authorized_keys
+    5  mysql --version
+    6  history
